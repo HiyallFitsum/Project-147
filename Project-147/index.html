@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+    <a-assets>
+        <img id="texture1" src="texture1.jpg">
+        <img id="texture2" src="texture2.jpg">
+        <img id="texture3" src="texture3.jpg">
+        <img id="texture4" src="texture4.jpg">
+    </a-assets>
+
+  </head>
+
+
+
+  <body>
+    <a-scene background="color: orange">
+      <a-entity position="0 0 10">
+        <a-camera></a-camera>
+      </a-entity>
+    
+      <!--Floor#1 and Wall#2-->
+      <a-entity>
+      <a-box
+      src="#texture1"
+      position="0 -1 0"
+      rotation="0 0 0"
+      width="8"
+      height=".5"
+      depth="8"
+      ></a-box>
+          
+      <a-box
+      src="#texture2"
+      position="0 3 -4"
+      rotation="0 0 0"
+      width="8"
+      height="8"
+      depth="1"
+      ></a-box>
+    </a-entity>
+
+        <!--Chair-->
+    <a-entity>    
+        <!--Seat-->
+        <a-box       
+        src="#texture4"
+        position="0 1.25 0"
+        rotation="0 0 0"
+        width="2"
+        height=".25"
+        depth="2"></a-box>
+        <a-box     
+        src="#texture4"
+        position="1 2.661 0"
+        rotation="0 0 0"
+        width=".25"
+        height="3"
+        depth="2"></a-box>
+    
+        <!--Legs-->
+        <a-box
+        src="#texture4"
+        position="-.75 .25 0.75"
+        rotation="0 0 0"
+        width=".5"
+        height="2"
+        depth=".5"></a-box>
+        <a-box
+        src="#texture4"
+        position="-.75 .25 -.75"
+        rotation="0 0 0"
+        width=".5"
+        height="2"
+        depth=".5"></a-box>
+        <a-box
+        src="#texture4"
+        position=".875 .25 0.75"
+        rotation="0 0 0"
+        width=".5"
+        height="2"
+        depth=".5"></a-box>
+        <a-box
+        src="#texture4"
+        position=".875 .25 -.75"
+        rotation="0 0 0"
+        width=".5"
+        height="2"
+        depth=".5"></a-box>
+    </a-entity>
+
+    <a-entity>
+        <a-box
+        src="#texture3"
+        position="-1 1.7 0"
+        rotation="0 0 0"
+        width="3"
+        height=".365"
+        depth="6"></a-box>
+
+     <!--Legs-->
+        <a-box
+        src="#texture3"
+        position="-2.25 .275 2.75"
+        rotation="0 0 0"
+        width=".5"
+        height="3"
+        depth=".5"></a-box>
+        <a-box
+        src="#texture3"
+        position="-2.25 .275 -2.75"
+        rotation="0 0 0"
+        width=".5"d
+        height="3"
+        depth=".5"></a-box>
+        <a-box
+        src="#texture3"
+        position="0.25 .275 2.75"
+        rotation="0 0 0"
+        width=".5"
+        height="3"
+        depth=".5"></a-box>
+        <a-box
+        src="#texture3"
+        position="0.25 .275 -2.75"
+        rotation="0 0 0"
+        width=".5"
+        height="3"
+        depth=".5"></a-box>
+    </a-entity>
+
+
+    </a-scene>
+  </body>
+</html>
+
